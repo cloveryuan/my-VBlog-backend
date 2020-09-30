@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_lists",
+  "info": {
+    "name": "projectList"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "project_lists"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

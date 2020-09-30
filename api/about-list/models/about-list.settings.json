@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_lists",
+  "info": {
+    "name": "aboutList"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

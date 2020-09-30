@@ -1,0 +1,67 @@
+{
+  "kind": "singleType",
+  "collectionName": "configgurations",
+  "info": {
+    "name": "configguration"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "githubUsername": {
+      "type": "string"
+    },
+    "blogTitle": {
+      "type": "string"
+    },
+    "blogDescribe": {
+      "type": "string"
+    },
+    "htmlTitle": {
+      "type": "string"
+    },
+    "fontColor": {
+      "type": "string"
+    },
+    "backgroundColorLeft": {
+      "type": "string"
+    },
+    "backgroundColorRight": {
+      "type": "string"
+    },
+    "audioUrl": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "mini": {
+      "type": "boolean"
+    },
+    "audioAutoPlay": {
+      "type": "boolean"
+    },
+    "avatarUrl": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "location": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "blog": {
+      "type": "string"
+    }
+  }
+}

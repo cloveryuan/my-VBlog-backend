@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "study_news",
+  "info": {
+    "name": "studyNew"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
